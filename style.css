@@ -1,0 +1,346 @@
+*{
+    margin: 0;
+    padding: 0; 
+font-family: 'Poppins', sans-serif;
+
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    /* opacity: 0.5; */
+    background-image: url(Images/Clg\ photo.webp);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.header b
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 400px;
+     height:100px;
+}
+.nav-links{
+    flex: 1;
+    text-align: center;
+    
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    font-size: 18px;
+    text-decoration: none;
+    font-weight:700;
+    color: rgb(255, 255, 255);
+
+}
+.nav-links ul li::after{
+    content:'';
+    width: 0%;
+    height: 2px;
+    background: red;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: blanchedalmond;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    color: rgba(255, 244, 230, 0.92);
+    font-size: 65px;
+}
+.text-box p{
+    margin: 2px 0px 5px;
+    font-size: 18px;
+    font-weight: 800;
+    color: rgb(17, 26, 23);
+}
+.visit-btn{
+    font-weight: 600;
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(30, 30, 70);
+    background-color: #807b7b;
+    border: 3px solid rgb(3, 3, 26);
+    padding: 12px 34px;
+    font-size: 15px;
+    position: relative;
+    cursor: pointer;
+}
+.visit-btn:hover{
+    background-color: rgb(194, 188, 218);
+    transition: 1s;
+    border: 1px solid gray;
+}
+/* nav .fa-solid{
+    display: none;
+} */
+/* @media(max-width:700px)
+{
+   .text-box h1{
+    font-size: 20px;
+   }
+   .nav-links ul li {
+    display: block;
+   }
+   .nav-links{
+    position: absolute;
+    background-color: aquamarine;
+    height: 100vh;
+    width: 200px;
+    top:0;
+    right: -235px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+   }
+   nav .fa-solid{
+    display: block;
+    color: #b21919;
+    font-size: 22px;
+    cursor: pointer;
+   }
+   .nav-links ul{
+    padding: 30px;
+   }
+} */
+
+
+/* -----------Course---------  */
+.course{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 700;
+}
+p{
+    color: rgb(39, 21, 57);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.course-col{
+    flex-basis: 31%;
+    background: rgb(247, 221, 221);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    margin-right: 50px;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.course-col:hover{
+    box-shadow: 0 0 20px 0px rosybrown;
+    cursor: pointer;
+}
+/* @media(max-width:700px){
+    .row{
+        flex-direction: column;
+    }
+} */
+
+
+/* Campus */
+.campus{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.campus-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.campus-col img{
+    width: 100%;
+    height: 300px;
+    display: block;
+}
+
+
+/*------------------ Facilities----------------- */
+.facility{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+
+}
+.facility-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    margin-left: 10px;
+    text-align: left;
+
+}
+.facility-col img{
+    width: 100%;
+    border-radius: 8px;
+}
+.facility-col p{
+    padding: 0;
+}
+.facility-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+
+}
+
+/*      Testimonial    */
+.testimonial{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+.testimonial-col{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: center;
+    background: rgb(194, 188, 218);
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+}
+.testimonial-col img{
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+.testimonial-col p{
+padding: 0;
+}
+.testimonial-col h3{
+    text-align: right;
+    margin-top: 15px;
+}
+.testimonial-col .fa{
+    color: rgb(0, 0, 0);
+}
+
+/* @media(max-width:700px){
+    .testimonial-col img{
+        margin-left: 0px;
+        margin-right: 15px;
+
+    }
+} */
+
+/* ------------footer------- */
+.footer{
+    background-color: rgb(134, 119, 102);
+    width: 100%;
+    color: rgb(5, 1, 1);
+    text-align: center;
+    padding: 15px 0;
+    font-size: x-large;
+}
+.footer p{
+    color: rgb(0, 0, 0);
+}
+.footer h4{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-weight:bold;
+    font-size: xx-large;
+}
+.footer .fa{
+    color: rgb(37, 37, 66);
+    margin: 0 5px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+.fa-heart-o{
+    color: red;
+}
+
+
+/* ------------------------About Us Page---------------------- */
+
+.about-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(Images/bg\ image\ about\ us.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.about-header h1{
+    margin-top: 100px;
+}
+.about-dtc{
+    width: 70%;
+    margin: auto;
+    padding-top: 30px;
+    text-align: center;
+}
+.about-dtc h2{
+    font-weight: bolder;
+    font-size: xx-large;
+}
+.about-dtc p{
+    line-height: 2;
+    letter-spacing: normal;
+    font-size: large;
+}
+
+
+/* -----------------Contact Us Page------------ */
+.location{
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+}
+.location iframe{
+     width: 100%;
+}
+.contact-us{
+    width: 80%;
+    margin: auto;
+}
+.contact-col{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+.contact-col div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
